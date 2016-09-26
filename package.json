@@ -1,4 +1,17 @@
 {
   "name": "Boilerplate",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts":{
+      "build": "grunt sass && grunt postcss",
+      "watch": "grunt watch:sass && grunt watch:postcss &"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.2.1",
+    "load-grunt-tasks": "^3.5.2"
+  }
 }

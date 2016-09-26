@@ -1,0 +1,28 @@
+body {
+    &.nav-opened {
+        .nav-cover {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 240px;
+            bottom: 0;
+            z-index: 200;
+        }
+
+        .nav {
+            opacity: 1;
+            transition: transform 0.3s ease, opacity 0s ease 0s;
+            transform: translate3D(0, 0, 0);
+        }
+    }
+
+    &.nav-closed {
+        .nav {
+            transform: translate3D(97px, 0, 0);
+        }
+    }
+}
+
+
+@import "atoms/nav-title";
+@import "atoms/nav-close";
